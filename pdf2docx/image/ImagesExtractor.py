@@ -259,7 +259,7 @@ class ImagesExtractor:
             'bbox': tuple(bbox),
             'width': image.width,
             'height': image.height,
-            'image': image.tobytes()
+            'image': image.pil_tobytes(format="PNG") # https://github.com/ArtifexSoftware/pdf2docx/issues/198
         }
 
 
